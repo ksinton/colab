@@ -6,7 +6,7 @@ const padEnd = require('string.prototype.padend')
 
 var corsOptions = {
     origin: [
-        "http://localhost:3000",
+        "http://localhost:5000",
         "https://web.ava.me"
     ]
 }
@@ -40,10 +40,10 @@ app.get('/info', function (req, res, next) {
             "name": "Kim Sinton"
         },
         "frontend": {
-            "url": "string, the url of your frontend."
+            "url": "in progres"
         },
         "language": "node.js",
-        "sources": "string, the url of a github repository including your backend sources and your frontend sources"
+        "sources": "https://github.com/ksinton/colab"
     })
     next()
 })
