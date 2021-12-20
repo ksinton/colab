@@ -56,6 +56,7 @@ app.post('/mutations', function (req, res, next) {
     // Validate request
     if (!req.body) {
         res.status(400).send({
+            ok: false,
             message: "Content can not be empty!"
         });
         return
@@ -67,6 +68,7 @@ app.post('/mutations', function (req, res, next) {
         || !req.body.text )  {
 
         res.status(400).send({
+            ok: false,
             message: "Incorrect post data sent"
         });
         return
@@ -84,6 +86,7 @@ app.post('/mutations', function (req, res, next) {
     Model.createMutation(mutation, (err, mutationData) => {
         if (err)
             res.status(500).send({
+                ok: false,
                 message:
                     err.message || "Some error occurred while creating the Mutation."
             });
@@ -91,6 +94,7 @@ app.post('/mutations', function (req, res, next) {
             Model.getConversation(1, (err, data) => {
                 if (err)
                     res.status(500).send({
+                        ok: false,
                         message:
                             err.message || "Some error occurred while retrieving the conversation"
                     });
@@ -118,6 +122,7 @@ app.post('/mutations', function (req, res, next) {
                             break;
                         default:
                             res.status(400).send({
+                                ok: false,
                                 message: "Unknown mutation type"
                             });
                             return
@@ -126,6 +131,7 @@ app.post('/mutations', function (req, res, next) {
                     Model.updateConversation({id: conversationId, text: conversationText, lastMutation: mutationData.id }, (err, newConversationData) => {
                         if (err)
                             res.status(500).send({
+                                ok: false,
                                 message:
                                     err.message || "Some error occurred while updating the conversation."
                             });
@@ -147,6 +153,7 @@ app.get('/conversations', function (req, res, next) {
     Model.getConversation(1, (err, data) => {
         if (err)
             res.status(500).send({
+                ok: false,
                 message:
                     err.message || "Some error occurred while retrieving the conversation"
             });

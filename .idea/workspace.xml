@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f1fb849-7422-4949-99d8-482247814e55" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/model.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +45,7 @@
       <option name="presentableId" value="Default" />
       <updated>1639789992182</updated>
       <workItem from="1639789993938" duration="1425000" />
-      <workItem from="1639831762191" duration="32224000" />
+      <workItem from="1639831762191" duration="32771000" />
     </task>
     <task id="LOCAL-00001" summary="colab project first commit">
       <created>1639957629479</created>
@@ -63,7 +61,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639968417067</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add cors for Ava">
+      <created>1640021048493</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1640021048494</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -72,6 +77,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="colab project first commit" />
     <MESSAGE value="colab update PORT to 5000" />
-    <option name="LAST_COMMIT_MESSAGE" value="colab update PORT to 5000" />
+    <MESSAGE value="add cors for Ava" />
+    <option name="LAST_COMMIT_MESSAGE" value="add cors for Ava" />
   </component>
 </project>
