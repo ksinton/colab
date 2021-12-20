@@ -127,7 +127,7 @@ app.post('/mutations', function (req, res, next) {
                                     err.message || "Some error occurred while updating the conversation."
                             })
                         else {
-                            res.send({
+                            res.status(201).send({
                                 "ok": true,
                                 "text": conversationText
                             })
