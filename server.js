@@ -5,7 +5,10 @@ const app = express();
 const padEnd = require('string.prototype.padend');
 
 var corsOptions = {
-    origin: "http://localhost:8081"
+    origin: [
+        "http://localhost:3000",
+        "https://web.ava.me"
+    ]
 };
 
 app.use(cors(corsOptions));
