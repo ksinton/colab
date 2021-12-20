@@ -1,13 +1,13 @@
-const mysql = require('mysql');
+const mysql = require('mysql')
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'Regine!000000',
     database: 'colab'
-});
+})
 connection.connect((err) => {
-    if (err) throw err;
-    console.log('Connected!');
-});
+    if (err) throw err
+    console.log('Connected!')
+})
 
-module.exports = connection;
+module.exports = connection

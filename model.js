@@ -20,13 +20,13 @@ Model.getConversation = (conversationId, result) => {
         if (err) {
             console.log("error: ", err)
             result(err, null)
-            return;
+            return
         }
 
         if (res.length) {
             console.log("found conversation: ", res[0])
             result(null, res[0])
-            return;
+            return
         }
 
         result({kind: "not_found"}, null)
@@ -38,13 +38,13 @@ Model.getConversations = (result) => {
         if (err) {
             console.log("error: ", err)
             result(err, null)
-            return;
+            return
         }
 
         if (res.length) {
             console.log("found conversations: ", res)
             result(null, res)
-            return;
+            return
         }
 
         result({kind: "not_found"}, null)
